@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const cors = require('cors');
 const app = (0, express_1.default)();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 // Middleware
 app.use(express_1.default.json());
 app.use(cors());
